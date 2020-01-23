@@ -3,12 +3,15 @@
 }
 
 body {
-  font-family: Arial;
+  font-size: 18px;
   padding: 10px;
   background: #f1f1f1;
   background-image: url("images/image1.jpg");
 }
 
+h2 {
+  margin:  5px 0 5px 0 ;
+}
 
 .header {
   padding: 30px;
@@ -16,6 +19,7 @@ body {
   background: white;
   background-image: url("images/image2.jpg");
   background-size: cover;
+  border-radius: 10%;
 }
 
 .header h1 {
@@ -26,6 +30,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  border-radius: 10%;
 }
 
 
@@ -54,9 +59,11 @@ body {
 
 
 .rightcolumn {
+
   float: left;
   width: 25%;
   padding-left: 20px;
+  padding-top: 50px;
 }
 
 
@@ -65,19 +72,11 @@ body {
   width: 100%;
   padding:10px;
 }
-.fakeimg1 {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-  background-image: url("images/image3.jpg");
-  background-size: cover;
-  
-  
-}
+
 
 
 .card {
-  padding: 20px;
+  padding: 10px;
   
 }
 
@@ -93,6 +92,14 @@ p ,h1,h2,h3,h4,h5,a {
   
 }
 
+.p1 {
+  font-family: "Cursive";
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
 
 .footer {
 
@@ -105,6 +112,9 @@ p ,h1,h2,h3,h4,h5,a {
   margin-right: auto;
   background-image: url("images/image4.jpg");
   background-size: cover;
+  opacity: 80%;
+  border-style: groove;
+  border-color: gold;
 }
 
 @media screen and (max-width: 800px) {
@@ -120,3 +130,19 @@ p ,h1,h2,h3,h4,h5,a {
     width: 100%;
   }
 }
+
+a.button {
+  margin-left: 50px;
+  display: inline-block;
+  
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid gold;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+a.button:hover { background: rgba(255,255,255,.2); }
+a.button:active { background: white; }
