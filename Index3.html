@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
+<script type="text/javascript" src="js.js"></script>
+
 <head>
   <title> IT-1902 </title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  
 </head>
+
 <body>
+<main>
   <div class="header">
-    <h1><font color = "Gold">The Lord of The Rings</font></h1>
+    <header><h1><font color = "Gold">The Lord of The Rings</font></h1></header>
     <p><font size="5" color = "Gold">The Exiting History of Middle-Earth</font></p>
   </div>
   <div class="topnav">
@@ -20,8 +26,8 @@
     <div class="leftcolumn">
       <div class="card">
         <h2>Middle-Earth</h2>
-        <div class="fakeimg1" style="background-image: url(images/image3.jpg);  background-size: cover;
-  height: 100%; height: 425px;"> </div>
+        
+  <img src = "images/image3.jpg" style = "width: 100%;">
         <p><font size="5">The 3<sup>rd</sup> Age</font></p>
         <p class = "p1"><font size="4"><blockquote>The Third Age saw the rise in power of the realms of Arnor and Gondor, and their fall. Arnor was divided into three petty Kingdoms, which fell one by one, whilst Gondor fell into the civil war of the Kin-strife, plague, Wainriders, and the Corsairs of Umbar.</blockquote>
 
@@ -54,16 +60,33 @@ Aragorn takes his place as King of the Reunited Kingdom of Arnor and Gondor, at 
    </div>
  </div>
  <div class="rightcolumn">
-  <a href="http://uaforizm.com/" title="Цитата дня"  target="_blank"><img src="http://uaforizm.com/inf/?color=orange" alt="Цитата дня" width="270" height="240" border="1" class="widget" /></a>
-
-  <a href="https://www.instagram.com/rush2000.an/" class="button">My Instagram</a>
+  <a id = "wid" href="http://uaforizm.com/" title="Цитата дня"  target="_blank"><img src="http://uaforizm.com/inf/?color=orange" alt="Цитата дня" width="270" height="240" border="1" class="widget" /></a>
+	<form class = "form">
+	
+  <button  id = "but1" type="button" onclick="f()"><p>Hide The Widget!</p></button>
+  <button  id = "but1" type="button" onclick="f1()"><p>Show The Widget!</p></button>
+	
+	</form>
+	
+  <a href="https://www.instagram.com/rush2000.an/" class="button">My Instagram</a></br>
+  <span id="list2">
+      <input type="radio" id="radio1" name="contact" onclick="if(this.checked){f3()}">
+    <label for="radio1"  >Show List of Interesting People</label></br>
+  <!--  <input type="radio" id="radio2" name="contact" onclick="if(this.checked){f4()}">
+    <label for="radio2"  >Hide List of Interesting People</label></br> -->
+    <label id="pre"></label>
+  </span>
+  
+</div>
 
 </div>
-</div>
 
+
+</main>
+</body>
+<footer>
 <div class="footer">
   <h2>Thank You!</h2>
 </div>
-</body>
-
+</footer>
 </html>
