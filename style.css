@@ -87,7 +87,7 @@ h2 {
   clear: both;
 }
 
-p ,h1,h2,h3,h4,h5,a {
+p ,h1,h2,h3,h4,h5,a,span {
   font-family: "Cursive",  Monotype Corsiva, Author, Zapf Chancery;
   
 }
@@ -95,6 +95,7 @@ p ,h1,h2,h3,h4,h5,a {
 .p1 {
   font-family: "Cursive";
 }
+
 
 li {
   display: inline-block;
@@ -146,3 +147,153 @@ a.button {
 } 
 a.button:hover { background: rgba(255,255,255,.2); }
 a.button:active { background: white; }
+
+.form #but1 {
+  background-color: Transparent;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  float: left;
+  width: 130px;
+  border: 2px solid gold;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+    acronym {
+     border-bottom: 1px dashed blue; /* Подчеркивание текста */
+     color: gold; /* Цвет текста */
+    }
+
+/*.button:active { background: white; }
+.button:hover { background: rgba(255,255,255,.2); }
+
+
+#slider { /*положение слайдера*/
+    position: relative;
+  text-align: center;
+    top: 10px;
+}
+
+#slider{ /*центровка слайдера*/
+  margin: 0 auto;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+  width: 20%;
+  float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+  width: 500%;
+  line-height: 0;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+  width: 100%;
+  overflow: hidden;
+}
+
+article img{ /*размер изображений слайдера*/
+  width: 80%;
+  margin-left: 83px;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+  max-width: 960px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+ 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3)
+{
+  background: url('images/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: left;
+  margin: 0 0 0 0; /*сдвиг влево*/
+  display: block;
+  height: 68px;
+  width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(1){
+  background: url('images/next.png') no-repeat; /*заливка фона картинкой без повторений*/
+  float: right;
+  margin: 0 0 0 0; /*сдвиг вправо*/
+  display: block;
+  height: 68px;
+  width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+  cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+  display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+  margin-left: -200%;
+}
+
+
+#controls{ /*положение блока всех управляющих элементов*/
+  margin: -25% 0 0 0;
+  width: 100%;
+  height: 50px;
+}
+
+#active label{ /*стиль отдельного переключателя*/
+  border-radius: 10px; /*скругление углов*/
+  display: inline-block; /*расположение в строку*/
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+}
+
+#active{ /*расположение блока с переключателями*/
+  margin: 23% 0 0;
+  text-align: center;
+}
+
+#active label:hover{ /*поведение чекбокса при наведении*/
+  background: #76c8ff;
+  border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3)
+{
+  background: #18a3dd;
+  border-color: #18a3dd !important;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+  opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+  transition: opacity 0.2s ease-out;
+}
+
+
